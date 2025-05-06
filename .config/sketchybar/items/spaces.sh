@@ -1,12 +1,11 @@
 #!/bin/bash
 
 sketchybar --add event aerospace_workspace_change
-sketchybar --add event space_windows_change
 
 # Získame všetky workspaces z aerospace
 for sid in $(aerospace list-workspaces --all); do
     sketchybar --add item space.$sid left \
-               --subscribe space.$sid aerospace_workspace_change space_windows_change system_woke system_will_sleep \
+               --subscribe space.$sid aerospace_workspace_change \
                --set space.$sid \
                      icon=$sid \
                      background.border_color=0xffffa500 \
@@ -19,5 +18,5 @@ for sid in $(aerospace list-workspaces --all); do
                      label.padding_right=15 \
                      icon.padding_left=7 \
                      click_script="aerospace workspace $sid" \
-                     script="$PLUGIN_DIR/space_windows.sh"
+                     script="$PLUGIN_DIR/space_windows.sh $sid"
 done

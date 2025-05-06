@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Získame ID space z názvu položky sketchybaru
-space_number=$(echo "$NAME" | sed 's/space\.//')
+# id workspace príde ako parameter
+space_number=$1
 
 if [ -z "$FOCUSED_WORKSPACE" ]; then
     FOCUSED_WORKSPACE=$(aerospace list-workspaces --focused)
