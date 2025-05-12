@@ -17,15 +17,13 @@ PLUGIN_DIR="$CONFIG_DIR/plugins"
 # If you are looking for other colors, see the color picker:
 # https://felixkratz.github.io/SketchyBar/config/tricks#color-picker
 
-sketchybar --bar position=top height=30 notch_display_height=40 blur_radius=30 color=0x77000000
+sketchybar --bar position=bottom height=30 notch_display_height=30 blur_radius=0 color=0xFF26282E
 
 ##### Changing Defaults #####
 # We now change some default values, which are applied to all further items.
 # For a full list of all available item properties see:
 # https://felixkratz.github.io/SketchyBar/config/items
 
-  # icon.font="Hack Nerd Font:Bold:14.0"
-  # label.font="Hack Nerd Font:Bold:12.0"
 default=(
   padding_left=5
   padding_right=5
@@ -44,7 +42,7 @@ sketchybar --default "${default[@]}"
 # Let's add some mission control spaces:
 # https://felixkratz.github.io/SketchyBar/config/components#space----associate-mission-control-spaces-with-an-item
 # to indicate active and available mission control spaces.
-source $ITEM_DIR/apple.sh
+# source $ITEM_DIR/apple.sh
 source $ITEM_DIR/spaces.sh
 source $ITEM_DIR/front_app.sh
 
@@ -62,11 +60,11 @@ source $ITEM_DIR/music.sh
 # volume is registered. More info about the event system can be found here:
 # https://felixkratz.github.io/SketchyBar/config/events
 
-source $ITEM_DIR/clock.sh
-source $ITEM_DIR/keyboard.sh
-source $ITEM_DIR/volume.sh
-source $ITEM_DIR/battery.sh
-source $ITEM_DIR/cpu.sh
+# source $ITEM_DIR/clock.sh
+# source $ITEM_DIR/keyboard.sh
+# source $ITEM_DIR/volume.sh
+# source $ITEM_DIR/battery.sh
+# source $ITEM_DIR/cpu.sh
 
 ##### Force all scripts to run the first time (never do this in a script) #####
 sketchybar --update

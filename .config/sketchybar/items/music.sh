@@ -5,7 +5,7 @@ music=(
   updates=on
 )
 
-sketchybar --add item music center \
+sketchybar --add item music right \
            --set music "${music[@]}" \
                  icon.font="sketchybar-app-font:Regular:14.0" \
                  icon=":music:" \

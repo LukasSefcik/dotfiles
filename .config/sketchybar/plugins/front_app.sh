@@ -11,6 +11,7 @@ if [ "$SENDER" = "front_app_switched" ]; then
                          icon.padding_left=8 \
                          label.padding_right=8 \
                          background.color=0x44ffa500 \
+                         background.drawing=off \
                          background.height=22 \
                          background.corner_radius=5 \
                          background.border_color=0xffffa500 \
