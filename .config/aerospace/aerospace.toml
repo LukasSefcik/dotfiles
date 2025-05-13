@@ -65,11 +65,11 @@ preset = 'qwerty'
 [gaps]
 inner.horizontal = 10
 inner.vertical =   10
-outer.left =       10
+outer.left =       5
 outer.bottom =     40
 # outer.top =        [{ monitor."built-in" = 10 }, 40]
-outer.top =        [{ monitor."built-in" = 10 }, 10]
-outer.right =      10
+outer.top =        [{ monitor."built-in" = 5 }, 5]
+outer.right =      5
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -102,8 +102,8 @@ outer.right =      10
 # '''
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#layout
-alt-slash = 'layout tiles horizontal vertical'
-alt-comma = 'layout accordion horizontal vertical'
+# alt-slash = 'layout tiles accordion horizontal'
+alt-comma = 'layout tiles accordion horizontal'
 alt-f = 'fullscreen'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#focus
